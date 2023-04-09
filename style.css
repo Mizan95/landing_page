@@ -22,11 +22,13 @@ body {
     top: 150px;    
     width: 30%;
     min-width: fit-content;
+    padding: 10px;
+
     background-color: rgba(240, 248, 255, 0.373);
+
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px;
 }
 
 .title-bar > img {
@@ -36,7 +38,9 @@ body {
 
 .title-bar text {
     font-size: 3rem;
-    color: antiquewhite;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: whitesmoke;
+    margin-left: 10px;
 }
 
 /* main content section */
@@ -55,69 +59,82 @@ body {
 /* text section within main section */
 .intro-text-wrapper {
     padding: 20px;
+    background-color: whitesmoke;
 }
 
 .intro-text-wrapper > p {
     font-size: 1.25rem;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(10, 65, 10);
 }
 
 /* form within main section */
 input {
-    display: block;
+    border: solid 1px gainsboro;
+    border-radius: 3px;
+    background-color: whitesmoke;
+    height: 25px;
+    width: inherit;
 }
 
 .form-wrapper {
     padding: 20px;
 }
 
-form > label, 
+form label, 
 legend {
     font-size: 1.25rem;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-
 legend {
     font-size: 1.5rem;
-    margin-bottom: 10px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    color: rgb(10, 65, 10);
 }
  .form-grid {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto auto auto auto;
     grid-template-rows: auto;
-    grid-template-areas:
-    "first-name last-name"
-    "email phone"
-    "password confirm-password";
- }
+    gap: 20px;
 
- .first-name-wrapper {
-    grid-area: first-name;
- }
-
- .last-name-wrapper {
-    grid-area: last-name;
- }
-
- .email-wrapper {
-    grid-area: email;
- }
-
- .phone-wrapper {
-    grid-area: phone;
- }
-
- .password-wrapper {
-    grid-area: password;
- }
-
- .confirm-password-wrapper {
-    grid-area: confirm-password;
+    margin-bottom: 20px;
  }
 
 button {
-    width: 100px;
+    width: 120px;
     height: 50px;
-    border: solid 1px blue;
-    border-radius: 3px;
+    padding: 10px;
+
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(10, 65, 10);
+    color: white;
+
+    font-size: 1.25rem;
+    font-weight: 600;
+
+    display: block;
+    margin: auto;
+    
+}
+
+/* footer */
+footer {
+    height: 100px;
+    background-color: whitesmoke;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+footer > text {
+    margin-bottom: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+footer > text > a {
+    text-decoration: none;
+
 }
